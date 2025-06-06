@@ -1,4 +1,4 @@
-# petiqueta# Petiqueta
+#Petiqueta
 
 **Petiqueta** es una plataforma web pensada para personas que quieren cuidar a sus mascotas y darles una identidad única en el mundo digital. Desarrollé este proyecto desde cero, priorizando la seguridad y la personalización, integrando tecnología QR y un sistema de perfiles para cada mascota.
 

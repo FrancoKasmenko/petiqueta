@@ -1,0 +1,90 @@
+:root {
+  --blanco-caldo: #fcf7ef;
+  --marron: #7a583a;
+  --caramelo: #b2884a;
+}
+
+.footer-mtg {
+  background: var(--blanco-caldo);
+  color: var(--marron);
+  padding: 56px 0 0 0;
+  margin-top: 60px;
+  font-size: 15px;
+}
+.footer-mtg .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 36px;
+}
+.footer-mtg img {
+  height: 44px;
+  margin-bottom: 12px;
+}
+.footer-mtg .footer-desc {
+  font-size: 14px;
+  max-width: 210px;
+}
+.footer-mtg h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 13px;
+  color: var(--marron);
+}
+.footer-mtg ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-mtg li {
+  margin-bottom: 7px;
+}
+.footer-mtg a {
+  color: var(--marron);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-mtg a:hover {
+  color: var(--caramelo);
+}
+.footer-mtg .footer-social {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+}
+.footer-mtg .footer-social a {
+  color: var(--marron);
+  transition: color 0.2s;
+}
+.footer-mtg .footer-social a:hover {
+  color: var(--caramelo);
+}
+.footer-mtg .footer-copy {
+  border-top: 1.5px solid var(--marron);
+  margin-top: 45px;
+  padding: 18px 0 14px 0;
+  text-align: center;
+  font-size: 14px;
+  user-select: none;
+  color: var(--marron);
+  opacity: 0.88;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-mtg .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-mtg .footer-container {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .footer-mtg {
+    padding-top: 32px;
+  }
+}

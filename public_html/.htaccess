@@ -1,0 +1,12 @@
+# Quita .php de la URL y muestra tu propio error 404
+RewriteEngine On
+
+# Si la URL no tiene punto y no es una carpeta, intenta agregar .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([a-zA-Z0-9\-_\/]+)$ $1.php [L]
+
+# Si no existe el archivo ni carpeta, ir a error404.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /error404.php [L]
